@@ -1,0 +1,67 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sign in.css">
+</head>
+<body>
+    <script>
+        function data()
+        {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            if(a==""||b=="")
+        {
+            alert("All fiels are mandatory");
+            return false
+        }}
+    </script>
+
+    <div class="contaner">
+
+        <form onsubmit="return data()" action="index.html">
+
+            <div class="card">
+    
+                <div class="logo">
+    
+                    <h1><img src="logo4.png"></h1>
+    
+                </div>
+    
+                <div class="search_bar">
+    
+                    <input type="text" id="n1" placeholder="username">
+                    
+                </div>
+                
+                <div class="search_bar">
+    
+                    <input type="password" id="n2" placeholder="password">
+                    
+                </div>
+    
+                <div class="forget">
+                    <a href="#">Forget Password?</a>
+                </div>
+    
+                <div class="check">
+    
+                    <input type="checkbox">
+                    <p>Remember Password</p>
+    
+                </div>
+    
+                <button>Login</button>
+    
+                <p class="forget"><a href="sign up.html">Sign Up</a><span>or</span><a href="index.html">Skip Login..</a></p>
+    
+            </div>
+        </form>
+
+
+    </div>
+    
+
+</body></html>
